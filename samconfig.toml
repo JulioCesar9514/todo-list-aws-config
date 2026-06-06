@@ -5,5 +5,5 @@ stack_name = "production-todo-list-aws"
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
 parameter_overrides = "Stage=production TableName=todo-table-production"
-resolve_s3 = true
+s3_bucket = "todo-list-aws-sam-bucket"
 no_fail_on_empty_changeset = true
