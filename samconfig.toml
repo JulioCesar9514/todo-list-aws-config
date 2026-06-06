@@ -1,0 +1,11 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "todo-list-aws"
+region = "eu-west-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Stage=staging TableName=todo-table-staging"
+resolve_s3 = true
+confirm_changeset = false
+fail_on_empty_changeset = false
+
